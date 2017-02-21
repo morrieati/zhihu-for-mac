@@ -1,0 +1,12 @@
+{
+  "name": "zhihu-for-mac",
+  "version": "1.0.0",
+  "description": "Zhihu client for macOS",
+  "main": "index.js",
+  "repository": "https://github.com/morrieati/zhihu-for-mac",
+  "author": "Morris Lew <morrislew@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.15"
+  }
+}
