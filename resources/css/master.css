@@ -7,7 +7,7 @@ body {
     margin: 0px;
     background-color: #f7f8fa;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
 }
 
@@ -23,7 +23,6 @@ button {
 }
 
 .app-nav {
-    padding: 0 10px;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 40px;
@@ -60,6 +59,7 @@ button {
 
 .app-nav-logo {
     width: 90px;
+    padding-right: 10px;
     height: 25px;
     display: flex;
     flex-direction: row;
@@ -80,7 +80,7 @@ button {
 }
 
 .place-break {
-    width: 90px;
+    width: 100px;
     height: 25px;
 }
 
@@ -105,15 +105,15 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*display: none;*/
 }
 
-.ask-question {
+.control-button {
     background-color: #0f88eb;
     color: #ffffff;
     font-size: 14px;
     padding: 0 10px;
     position: fixed;
-    right: 170px;
     bottom: 0px;
     width: 60px;
     height: 40px;
@@ -124,8 +124,13 @@ button {
     -webkit-user-select: none;
 }
 
-.ask-question:hover {
+.control-button:hover {
     background-color: #0d79d1;
+}
+
+#ask {
+    right: 170px;
+    /*display: none;*/
 }
 
 .notifications {
@@ -138,4 +143,11 @@ button {
     background-color: #f75659;
     border: 2px solid #fff;
     border-radius: 20px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

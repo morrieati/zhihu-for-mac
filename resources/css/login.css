@@ -1,0 +1,133 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #f7f8fa;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(30, 35, 42, .06);
+    box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    z-index: 1;
+}
+
+.app-nav-logo {
+    width: 90px;
+    padding-right: 10px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 0;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 400px;
+    height: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form {
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 6px 15px 0 rgba(0, 34, 77, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-footer {
+    width: 400px;
+    height: 120px;
+    background-color: #0f88eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 6px 15px 0 rgba(0, 34, 77, .5);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.login-footer:hover {
+    background-color: #0d79d1;
+}
+
+.login-text {
+    margin: 0;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.login-input {
+    width: auto;
+    height: 45px;
+    border-bottom: 1px solid #e7eaf1;
+    margin-top: 12px;
+}
+
+#login-input-password {
+    /*margin-bottom: 50px;*/
+}
+
+.login-input-textbox {
+    width: 350px;
+    border: 0 none;
+    outline: none;
+    background: transparent;
+    height: 48px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.login-options a {
+    width: 350px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #8590a6;
+}
