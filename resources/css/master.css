@@ -15,6 +15,13 @@ a {
     text-decoration: none;
 }
 
+button {
+    background-color: transparent;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+}
+
 .app-nav {
     padding: 0 10px;
     background-color: rgb(255, 255, 255);
@@ -31,9 +38,13 @@ a {
 }
 
 .app-nav-link-box {
-    width: 210px;
+    width: 200px;
     height: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .app-nav-link {
@@ -45,4 +56,86 @@ a {
 
 .app-nav-link:hover {
     color: #3e7ac2;
+}
+
+.app-nav-logo {
+    width: 90px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 0;
+}
+
+.app-nav-search {
+    width: 198px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 1px solid #e7eaf1;
+    border-radius: 3px;
+    background-color: #f7f8fa;
+    flex-grow: 1;
+}
+
+.place-break {
+    width: 90px;
+    height: 25px;
+}
+
+.app-nav-search-button {
+    padding-top: 4px;
+}
+
+.app-nav-search-button, .app-nav-link {
+    -webkit-app-region: no-drag;
+}
+
+.user-control {
+    background-color: #ffffff;
+    padding: 0 10px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    height: 40px;
+    border-top: 1px solid rgba(30, 35, 42, .06);
+    box-shadow: 0 -1px 3px 0 rgba(0, 34, 77, .05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ask-question {
+    background-color: #0f88eb;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0 10px;
+    position: fixed;
+    right: 170px;
+    bottom: 0px;
+    width: 60px;
+    height: 40px;
+    border-top-left-radius: 3px;
+    border-top: 1px solid #0f88eb;
+    border-left: 1px solid #0f88eb;
+    box-shadow: -1px -1px 3px 0 rgba(0, 34, 77, .05);
+    -webkit-user-select: none;
+}
+
+.ask-question:hover {
+    background-color: #0d79d1;
+}
+
+.notifications {
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+    padding: 0 4px;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #f75659;
+    border: 2px solid #fff;
+    border-radius: 20px;
 }

@@ -15,6 +15,8 @@ function createWindow() {
         width: 800,
         height: 600,
         titleBarStyle: 'hidden-inset',
+        'minWidth': 800,
+        'minHeight': 600
     })
     // load 'index.html'
     mainWindow.loadURL(url.format({
