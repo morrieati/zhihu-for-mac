@@ -1,0 +1,48 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #f7f8fa;
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.app-nav {
+    padding: 0 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(30, 35, 42, .06);
+    box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.app-nav-link-box {
+    width: 210px;
+    height: auto;
+    text-align: center;
+}
+
+.app-nav-link {
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #8590a6;
+}
+
+.app-nav-link:hover {
+    color: #3e7ac2;
+}
