@@ -21,32 +21,46 @@
 
     <div class="contents">
         <div class="login">
-            <form action="index.html" method="post">
-
-                <div class="login-form">
-                    <div class="login-input" id="login-input-username">
-                        <input class="login-input-textbox" type="text" name="" value="" placeholder="手机号或邮箱">
-                    </div>
-                    <div class="login-input" id="login-input-password">
-                        <input class="login-input-textbox" type="password" name="" value="" placeholder="密码">
-                    </div>
-                    <div class="login-options">
-                        <a href="#">忘记密码？</a>
-                    </div>
+            <div class="login-form">
+                <div class="login-input" id="login-input-username">
+                    <input class="login-input-textbox" type="text" name="" value="" placeholder="手机号或邮箱">
                 </div>
-                <a href="index.html" class="login-footer">
-                    <h1 class="login-text" style="font-size: 24px; line-height: 40px;">登录知乎</h1>
-                    <h2 class="login-text" style="font-size: 14px; line-height: 30px;">与世界分享你的知识、经验和见解</h2>
-                </a>
-            </form>
+                <div class="login-input" id="login-input-password">
+                    <input class="login-input-textbox" type="password" name="" value="" placeholder="密码">
+                </div>
+                <div class="login-options">
+                    <a href="#">忘记密码？</a>
+                </div>
+            </div>
+            <button class="login-footer">
+                <h1 class="login-text" style="font-size: 24px; line-height: 40px;">登录知乎</h1>
+                <h2 class="login-text" style="font-size: 14px; line-height: 30px;">与世界分享你的知识、经验和见解</h2>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="loading-indicator">
 
         </div>
     </div>
+
 </body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
 <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="./resources/js/login.js"></script>
 <script>
     // You can also require other files to run in this process
     require('./renderer.js')
 </script>
+<script>
+    if (window.module) module = window.module;
+</script>
+
 
 </html>
